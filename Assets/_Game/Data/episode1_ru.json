@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "speakers": [
+    { "id": "biskas", "name": "Бискас" },
+    { "id": "vriskas", "name": "Врискас" },
+    { "id": "narrator", "name": "" },
+    { "id": "ui", "name": "" }
+  ],
+  "messages": [
+    { "id": "ui_title", "speaker": "ui", "text": "Бискас: Эхо памяти" },
+    { "id": "ui_subtitle", "speaker": "ui", "text": "Фанатская история. Прототип: эпизод 1 «Лаборатория»" },
+    { "id": "ui_start", "speaker": "ui", "text": "Начать" },
+    { "id": "ui_continue", "speaker": "ui", "text": "Продолжить" },
+    { "id": "ui_new_game", "speaker": "ui", "text": "Новая игра" },
+    { "id": "ui_menu", "speaker": "ui", "text": "Меню" },
+    { "id": "ui_memory", "speaker": "ui", "text": "Память Бискаса" },
+    { "id": "ui_xray", "speaker": "ui", "text": "Зрение Врискаса" },
+    { "id": "ui_inventory", "speaker": "ui", "text": "Инвентарь" },
+    { "id": "ui_next", "speaker": "ui", "text": "Далее" },
+    { "id": "ui_memory_close", "speaker": "ui", "text": "Вернуться" },
+    { "id": "ui_memory_explains", "speaker": "ui", "text": "Бискас объясняет" },
+    { "id": "ui_end_title", "speaker": "ui", "text": "Эпизод завершён" },
+    { "id": "ui_end_body", "speaker": "ui", "text": "Дверь закрытого сектора открыта. Продолжение следует." },
+    { "id": "ui_save_corrupt", "speaker": "ui", "text": "Сохранение повреждено и не может быть загружено. Начните новую игру." },
+    { "id": "ui_save_incompatible", "speaker": "ui", "text": "Сохранение создано несовместимой версией игры. Начните новую игру." },
+    { "id": "ui_save_restored", "speaker": "ui", "text": "Основное сохранение повреждено — восстановлена резервная копия." },
+    { "id": "ui_save_failed", "speaker": "ui", "text": "Не удалось сохранить прогресс." },
+    { "id": "ui_new_game_confirm", "speaker": "ui", "text": "Нажмите «Новая игра» ещё раз, чтобы сбросить прогресс." },
+
+    { "id": "obj_pass", "speaker": "ui", "text": "Повреждённый пропуск" },
+    { "id": "obj_cache_hidden", "speaker": "ui", "text": "Панель стены" },
+    { "id": "obj_cache_xray", "speaker": "ui", "text": "Пустота за панелью?" },
+    { "id": "obj_cache_revealed", "speaker": "ui", "text": "Тайник (закрыт)" },
+    { "id": "obj_cache_empty", "speaker": "ui", "text": "Тайник (пуст)" },
+    { "id": "obj_door_closed", "speaker": "ui", "text": "Дверь сектора\n(заперта)" },
+    { "id": "obj_door_open", "speaker": "ui", "text": "Дверь сектора\n(открыта)" },
+    { "id": "item_key_lab", "speaker": "ui", "text": "Ключ" },
+
+    { "id": "hint_start", "speaker": "narrator", "text": "Закрытая лаборатория. На столе лежит чей-то пропуск. Коснитесь предмета, чтобы осмотреть его." },
+    { "id": "hint_after_dialogue", "speaker": "narrator", "text": "Подсказка: включите «Зрение Врискаса» и осмотрите стену." },
+
+    { "id": "pass_inspect_first", "speaker": "biskas", "text": "Пропуск треснул, фото выцарапано. Хозяин явно торопился. Если коснуться его памятью — может, что-то откроется." },
+    { "id": "pass_inspect_again", "speaker": "biskas", "text": "Обычный пропуск ничего больше не скажет. Нужна «Память Бискаса»." },
+    { "id": "memory_pass_need_inspect", "speaker": "biskas", "text": "Сначала надо рассмотреть пропуск поближе, а уже потом слушать его память." },
+    { "id": "memory_pass_seen", "speaker": "biskas", "text": "Есть! Воспоминание..." },
+    { "id": "memory_pass_replay", "speaker": "biskas", "text": "Ещё раз то же воспоминание..." },
+    { "id": "xray_pass", "speaker": "vriskas", "text": "Внутри — чип и трещина. Скучно. Ищи в другом месте." },
+
+    { "id": "cache_wall_plain", "speaker": "biskas", "requiresFlag": "rely_on_self", "text": "Ощупал каждый сантиметр — гладко. Похоже, без Врискаса не обойтись." },
+    { "id": "cache_wall_plain", "speaker": "biskas", "text": "Гладкая панель. Снаружи ничего не видно." },
+    { "id": "cache_key_taken", "speaker": "biskas", "text": "Панель поддалась. Внутри — ключ! Он в инвентаре." },
+    { "id": "cache_empty", "speaker": "biskas", "text": "Тайник пуст. Ключ уже у меня." },
+    { "id": "memory_wall", "speaker": "biskas", "text": "Стена помнит только шум вентиляции. Это не тот предмет." },
+    { "id": "memory_cache_after", "speaker": "biskas", "text": "Здесь лежал ключ. Теперь — только пыль." },
+    { "id": "xray_wall_no_hint", "speaker": "vriskas", "text": "Трубы, провода, бетон. Скажи сначала, что ищем, — тогда присмотрюсь." },
+    { "id": "xray_cache_found", "speaker": "vriskas", "requiresFlag": "trust_vriskas", "text": "Вот он. За панелью полость, внутри металл. Говорил же — доверься моим глазам." },
+    { "id": "xray_cache_found", "speaker": "vriskas", "text": "Ладно, нашёл. За панелью полость, внутри металл. Можешь открывать, самостоятельный." },
+    { "id": "xray_cache_open_hint", "speaker": "vriskas", "text": "Тайник уже найден. Коснись его ещё раз, чтобы открыть." },
+    { "id": "xray_cache_empty", "speaker": "vriskas", "text": "Пусто. Всё ценное уже у тебя." },
+
+    { "id": "door_locked", "speaker": "biskas", "text": "Заперто. Нужен ключ." },
+    { "id": "door_select_key", "speaker": "biskas", "text": "Ключ есть. Выберите его в инвентаре, затем коснитесь двери." },
+    { "id": "memory_door", "speaker": "biskas", "text": "Слишком много рук касалось двери — воспоминания смешались в шум." },
+    { "id": "xray_door", "speaker": "vriskas", "text": "Механический замок. Без ключа не откроем." },
+    { "id": "door_open", "speaker": "vriskas", "requiresFlag": "trust_vriskas", "text": "Видишь? Вместе быстрее. Запомни этот момент." },
+    { "id": "door_open", "speaker": "vriskas", "requiresFlag": "rely_on_self", "text": "Открыто. Признай: без меня ты бы до сих пор гладил стену." },
+    { "id": "door_open", "speaker": "biskas", "text": "Замок щёлкнул. Дверь открыта." },
+    { "id": "door_already_open", "speaker": "biskas", "text": "Дверь уже открыта." },
+
+    { "id": "mode_normal", "speaker": "narrator", "text": "Обычный осмотр." },
+    { "id": "mode_memory", "speaker": "narrator", "text": "«Память Бискаса»: коснитесь предмета, чтобы увидеть его прошлое." },
+    { "id": "mode_xray", "speaker": "narrator", "text": "«Зрение Врискаса»: скрытое за стенами становится видно." },
+    { "id": "item_selected_key", "speaker": "narrator", "text": "Выбран ключ. Коснитесь, к чему его применить." },
+    { "id": "item_deselected", "speaker": "narrator", "text": "Предмет убран." },
+    { "id": "unknown_object", "speaker": "narrator", "text": "Здесь ничего интересного." }
+  ],
+  "memory": {
+    "id": "memory_pass",
+    "title": "Воспоминание пропуска",
+    "steps": [
+      { "icon": "icon_alarm", "caption": "Тусклый свет. За стеной воет сирена.",
+        "explain": "Это было здесь, в этой лаборатории. Сработала тревога — кто-то очень торопился." },
+      { "icon": "icon_hand_key", "caption": "Рука в перчатке поддевает панель у вентиляции.",
+        "explain": "Видите? Он спрятал ключ за панелью у вентиляции. Значит, тайник прямо в этой стене." },
+      { "icon": "icon_pass_fall", "caption": "Пропуск выскальзывает из кармана.",
+        "explain": "А пропуск выпал у него из кармана — вот почему он лежит на столе." },
+      { "icon": "icon_steps", "caption": "Шаги удаляются. Панель снова похожа на стену.",
+        "explain": "Он ушёл, и панель слилась со стеной. Простым глазом её не найти — нужен взгляд сквозь стены." }
+    ]
+  },
+  "dialogues": [
+    {
+      "id": "dlg_after_memory",
+      "start": "d1",
+      "nodes": [
+        { "id": "d1", "speaker": "vriskas", "text": "Опять чужие воспоминания? Что на этот раз?", "next": "d2" },
+        { "id": "d2", "speaker": "biskas", "text": "Кто-то спрятал ключ в стене, у вентиляции. Но где именно — не разглядел.", "next": "d3" },
+        {
+          "id": "d3", "speaker": "vriskas", "text": "Стены я вижу насквозь. Доверишь поиск мне или опять сам?",
+          "choices": [
+            { "text": "Доверюсь твоему зрению.", "setFlag": "trust_vriskas", "next": "d4a" },
+            { "text": "Сначала сам осмотрю стену.", "setFlag": "rely_on_self", "next": "d4b" }
+          ]
+        },
+        { "id": "d4a", "speaker": "vriskas", "text": "Наконец-то разумное решение. Включай моё зрение и смотри на стену.", "setFlags": ["dialogue_done"] },
+        { "id": "d4b", "speaker": "vriskas", "text": "Как скажешь. Только потом не говори, что я не предлагал.", "next": "d5b" },
+        { "id": "d5b", "speaker": "biskas", "text": "Если ничего не найду — позову тебя.", "setFlags": ["dialogue_done"] }
+      ]
+    }
+  ]
+}

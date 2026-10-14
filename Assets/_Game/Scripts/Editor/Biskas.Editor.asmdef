@@ -1,0 +1,20 @@
+{
+    "name": "Biskas.Editor",
+    "rootNamespace": "Biskas.EditorTools",
+    "references": [
+        "Biskas.Core",
+        "Biskas.Runtime",
+        "UnityEngine.UI"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
